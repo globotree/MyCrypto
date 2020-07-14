@@ -49,7 +49,7 @@ const LedgerDecrypt = ({ formData, onUnlock }: OwnProps) => {
     WalletId.LEDGER_NANO_S_NEW,
     DEFAULT_GAP_TO_SCAN_FOR
   );
-  // @todo -> Figure out which assets to display in dropdown. Dropdown is heavy with 900+ assets in it. Loads slow af.
+  // @todo -> Figure out which assets to display in dropdown. Selector is heavy with 900+ assets in it. Loads slow af.
   const filteredAssets = assets.filter(({ uuid }) => MOONPAY_ASSET_UUIDS.includes(uuid)); // @todo - fix this.
 
   const handleNullConnect = () => {
